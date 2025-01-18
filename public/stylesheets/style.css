@@ -1,0 +1,52 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    background-image: url('../images/BguserAuth.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainContainer{
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    background-color: rgba(172, 172, 172, 0.3);
+}
+
+.newAmsterdam {
+    font-family: "New Amsterdam", sans-serif;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    transition: ease-in 100ms;
+}
+
+::placeholder{
+    color: white !important;
+}
+
+input:hover{
+    background: white;
+    color: black;
+    transform: scale(1.03);
+}
+
+input:hover::placeholder{
+    color: black !important;
+}
+
+.submitBtn{
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 6px;
+    border-radius: 25px;
+    transition: ease-in 100ms;
+}
+
+.submitBtn:hover{
+    background: white;
+    color: black;
+    transform: scale(1.03);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full h-screen flex justify-center items-center">
+        <div class="mainContainer w-[90%] h-[90%] rounded-2xl overflow-hidden flex justify-between">
+            <div class="box p-8 w-1/2 h-full flex flex-col justify-center">
+                <form action="/register" method="post" class="w-full flex flex-col gap-3 newAmsterdam">
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="text" name="name" placeholder="Enter name" required>
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="text" name="username" placeholder="Enter username" required>
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="number" name="phonenum" placeholder="Enter phone number" required>
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="email" name="email" placeholder="Enter email" required>
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="password" name="password" placeholder="Enter password" required>
+                    <input type="submit" class="submitBtn newAmsterdam text-white text-2xl tracking-wide" value="Register user">
+                </form>
+                
+            </div>
+            <div class="box p-8 w-1/2 h-full flex flex-col justify-center">
+                <form action="/login" method="post" class="w-full flex flex-col gap-3 newAmsterdam">
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="email" name="email" placeholder="Enter email" required>
+                    <input class="px-3 py-2 outline-none rounded-lg text-white text-xl tracking-wider" type="password" name="password" placeholder="Enter password" required>
+                    <input type="submit" class="submitBtn newAmsterdam text-white text-2xl tracking-wide" value="Login user">
+                </form>
+                
+            </div>
+            <div class="boxSlide w-1/2 h-full bg-white absolute top-0 right-0 overflow-hidden"></div>
+            <div class="contentSlide w-1/2 h-full absolute top-0 right-0 flex flex-col p-8 justify-center items-center">
+                <img src="images/random.png" alt="" class="imageSlide w-1/2 h-auto">
+                <div class="flex flex-col justify-center items-start p-8 w-full h-full">
+                    <div class="flex w-[1500px] h-full justify-between items-center">
+                        <div class="signinSlide flex flex-col justify-center items-center">
+                            <p class="newAmsterdam text-black text-6xl tracking-wide text-center">Signin</p>
+                            <p class="newAmsterdam text-black mt-4 text-md">Join us today! Fill out the form below to create your account and get started.</p>
+                            <p class="text-center text-black text-xs newAmsterdam tracking-wide">Already have an account <span class="loginBtn tracking-wider font-bold tracking-widest cursor-pointer text-blue-700">Login here</span></p>
+                        </div>
+                        <div class="loginSlide flex flex-col justify-center items-center">
+                            <p class="newAmsterdam text-black text-6xl tracking-wide text-center">Login</p>
+                            <p class="newAmsterdam text-black mt-4 text-md">Welcome back! Please enter your email and password below to log in.</p>
+                            <p class="text-center text-black text-xs newAmsterdam tracking-wide">Don't have an account <span class="registerBtn tracking-wider font-bold tracking-widest cursor-pointer text-blue-700">Register here</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
