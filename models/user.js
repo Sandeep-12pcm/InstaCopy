@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/userAuth");
+// mongoose.connect("mongodb://127.0.0.1:27017/userAuth");
 
 const userSchema = mongoose.Schema({
     username: String,
