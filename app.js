@@ -23,13 +23,17 @@ const MONGO_URI = process.env.MONGO_URI;
 // Ensure only one connection to MongoDB
 if (!mongoose.connection.readyState) {
   mongoose
-    .connect(MONGO_URI)
+    .connect(MONGO_URI, {
+      useNewUrlParser: true, 
+      useUnifiedTopology: true
+    })
     .then(() => console.log('Connected to MongoDB Atlas!'))
     .catch((err) => {
       console.error('Error connecting to MongoDB:', err);
       process.exit(1); // Exit the application if the connection fails
     });
 }
+
 
 // Route to render the homepage
 app.get('/', (req, res) => {

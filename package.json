@@ -8,7 +8,7 @@
     "gsap": "^3.12.5",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.12.0",
-    "mongoose": "^8.5.2",
+    "mongoose": "^8.9.5",
     "toastify-js": "^1.12.0"
   },
   "name": "user-authentication",
